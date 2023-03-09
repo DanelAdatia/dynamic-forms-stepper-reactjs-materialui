@@ -50,10 +50,11 @@ const DynamicForm = ({
       }}
     >
       {({ isSubmitting }) => (
-        <Form>
+        <Form autoComplete="off">
           {formFields?.map((field, index) => (
-            <div key={index} style={{ marginBottom: 16 }}>
+            <div key={index} style={{ marginBottom: 16, marginTop: 25 }}>
               <Field
+                autoComplete="off"
                 name={field.name}
                 type={field.type}
                 required={field.validation?.required}
@@ -77,7 +78,12 @@ const DynamicForm = ({
               Submit
             </Button>
           ) : (
-            <Button variant="contained" type="submit" disabled={isSubmitting}>
+            <Button
+              sx={{ m: 2 }}
+              variant="contained"
+              type="submit"
+              disabled={isSubmitting}
+            >
               Next
             </Button>
           )}
