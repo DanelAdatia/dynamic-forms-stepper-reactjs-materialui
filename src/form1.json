@@ -1,0 +1,29 @@
+{
+  "step1Fields": [
+    {
+      "name": "firstName",
+      "label": "First Name",
+      "type": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "lastName",
+      "label": "Last Name",
+      "type": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "type": "email",
+      "validation": {
+        "required": true,
+        "pattern": "^\\S+@\\S+$"
+      }
+    }
+  ]
+}

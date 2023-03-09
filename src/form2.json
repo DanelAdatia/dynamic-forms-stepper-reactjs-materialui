@@ -1,0 +1,42 @@
+{
+  "step2Fields": [
+    {
+      "name": "addressLine1",
+      "label": "Address Line 1",
+      "type": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "addressLine2",
+      "label": "Address Line 2",
+      "type": "text"
+    },
+    {
+      "name": "city",
+      "label": "City",
+      "type": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "state",
+      "label": "State",
+      "type": "text",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "zipCode",
+      "label": "Zip Code",
+      "type": "text",
+      "validation": {
+        "required": true,
+        "pattern": "^[0-9]{5}(?:-[0-9]{4})?$"
+      }
+    }
+  ]
+}

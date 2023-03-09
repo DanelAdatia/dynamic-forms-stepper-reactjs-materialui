@@ -1,0 +1,30 @@
+{
+  "step3Fields": [
+    {
+      "name": "creditCardNumber",
+      "label": "Credit Card Number",
+      "type": "text",
+      "validation": {
+        "required": true,
+        "pattern": "^[0-9]{16}$"
+      }
+    },
+    {
+      "name": "expirationDate",
+      "label": "Expiration Date",
+      "type": "text",
+      "validation": {
+        "required": true,
+        "pattern": "^(0[1-9]|1[0-2])\\/?([0-9]{4}|[0-9]{2})$"
+      }
+    },
+    {
+      "name": "cvv",
+      "label": "CVV",
+      "type": "text",
+      "validation": {
+        "required": false
+      }
+    }
+  ]
+}
